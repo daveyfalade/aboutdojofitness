@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Book - Dojo Fitness</title>
+<style>
+body {background:#111;color:white;font-family:Arial;text-align:center;}
+form {max-width:400px;margin:auto;}
+input,select {width:100%;padding:10px;margin:10px;}
+button {background:#ff3c00;color:white;padding:10px;border:none;}
+nav a {color:white;margin:10px;}
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="reviews.html">Reviews</a>
+<a href="location.html">Location</a>
+<a href="booking.html">Book</a>
+</nav>
+
+<h1>Book a Session</h1>
+
+<form action="https://formsubmit.co/YOUR-EMAIL@gmail.com" method="POST">
+<input type="text" name="name" placeholder="Name" required>
+<input type="email" name="email" placeholder="Email" required>
+
+<select name="session">
+<option>1-on-1 Training</option>
+<option>Group Session</option>
+</select>
+
+<input type="date" name="date" required>
+
+<button type="submit">Book Now</button>
+</form>
+
+</body>
+</html>
