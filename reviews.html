@@ -1,15 +1,107 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Reviews - Dojo Fitness</title>
+
 <style>
-body {background:#111;color:white;font-family:Arial;text-align:center;}
-.review {background:#1a1a1a;margin:20px;padding:20px;border-radius:10px;}
-nav a {color:white;margin:10px;}
+body {
+    margin: 0;
+    background: #111;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background: #ff3c00;
+    padding: 20px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+nav {
+    background: #222;
+    padding: 12px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: white;
+    margin: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff3c00;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    color: #ff3c00;
+}
+
+.reviews-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    padding: 30px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.review {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    transition: transform 0.2s ease;
+}
+
+.review:hover {
+    transform: translateY(-5px);
+}
+
+.review img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.stars {
+    color: gold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background: #000;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+@media (max-width: 600px) {
+    .review img {
+        height: 160px;
+    }
+}
 </style>
 </head>
 
 <body>
+
+<header>DOJO FITNESS</header>
 
 <nav>
 <a href="index.html">Home</a>
@@ -21,11 +113,42 @@ nav a {color:white;margin:10px;}
 
 <h1>Client Reviews</h1>
 
-<div class="review">"Lost 8kg in 2 months – amazing coaching!"</div>
-<div class="review">"Best trainer in the area, very motivating."</div>
-<div class="review">"Helped me gain confidence and strength."</div>
-<div class="review">"Professional and results-driven sessions."</div>
-<div class="review">"Great atmosphere and support."</div>
+<div class="reviews-container">
 
-</body>
-</html>
+<div class="review">
+<img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b" alt="Weight loss training">
+<div class="stars">★★★★★</div>
+<p>"Lost 8kg in 2 months – amazing coaching!"</p>
+</div>
+
+<div class="review">
+<img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e" alt="Personal training session">
+<div class="stars">★★★★★</div>
+<p>"Best trainer in the area, very motivating."</p>
+</div>
+
+<div class="review">
+<img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438" alt="Strength training">
+<div class="stars">★★★★★</div>
+<p>"Helped me gain confidence and strength."</p>
+</div>
+
+<div class="review">
+<img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61" alt="Gym coaching">
+<div class="stars">★★★★★</div>
+<p>"Professional and results-driven sessions."</p>
+</div>
+
+<div class="review">
+<img src="https://images.unsplash.com/photo-1549060279-7e168fcee0c2" alt="Gym community">
+<div class="stars">★★★★★</div>
+<p>"Great atmosphere and support."</p>
+</div>
+
+</div>
+
+<footer>
+© 2026 Dojo Fitness. All rights reserved.
+</footer>
+
+</body
